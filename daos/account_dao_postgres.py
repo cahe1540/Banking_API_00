@@ -2,7 +2,6 @@ from daos.account_dao import AccountDAO
 from entities.account import Account
 from exceptions.account_not_found_error import AccountNotFoundError
 from exceptions.overdraft_exception import OverDraftError
-
 import psycopg2
 from psycopg2._psycopg import ProgrammingError
 from utils.connection import connection
@@ -11,14 +10,18 @@ from utils.connection import connection
 class AccountDAOPostgres(AccountDAO):
 
     def create_account(self, account: Account) -> Account:
-        # 1) just create account, can only fail if db fails
-        sql = """insert into account (account_type, balance, client_id) values (%s, %s, %s) returning account_id"""
-        cursor = connection.cursor()
-        cursor.execute(sql, (account.account_type, account.balance, account.client_id))
-        connection.commit()
-        a_id = cursor.fetchone()[0]
-        account.account_id = a_id
-        return account
+        try:
+            # 1) just create account, can only fail if db fails
+            sql = """insert into account (account_type, balance, client_id) values (%s, %s, %s) returning account_id"""
+            cursor = connection.cursor()
+            cursor.execute(sql, (account.account_type, account.balance, account.client_id))
+            connection.commit()
+            a_id = cursor.fetchone()[0]
+            account.account_id = a_id
+            return account
+        except psycopg2.errors.CheckViolation as e:
+            connection.rollback()
+            raise OverDraftError(f'Invalid balance amount. Can not create the account.')
 
     def get_all_accounts(self) -> list[Account]:
         # 1) get all accounts
@@ -92,6 +95,9 @@ class AccountDAOPostgres(AccountDAO):
             account.account_id = result[0]
             return account
         # 2) raise AccountNotFoundError not present if fail
+        except psycopg2.errors.CheckViolation as e:
+            connection.rollback()
+            raise OverDraftError(f'Invalid balance amount. Can not create the account.')
         except TypeError:
             raise AccountNotFoundError(f'Account with id: {account.account_id} was not found.')
         except ProgrammingError:
@@ -113,8 +119,7 @@ class AccountDAOPostgres(AccountDAO):
         # 2) raise AccountNotFoundError not present if fail
         except psycopg2.errors.CheckViolation as e:
             connection.rollback()
-            raise OverDraftError(
-                f'Account with id: {account_id} has insufficient funds, the transaction was cancelled.')
+            raise OverDraftError(f'Account with id: {account_id} has insufficient funds, the transaction was cancelled.')
         except TypeError:
             raise AccountNotFoundError(f'Account with id: {account_id} was not found.')
         except ProgrammingError:
@@ -131,6 +136,11 @@ class AccountDAOPostgres(AccountDAO):
             connection.commit()
             account.account_id = result[0]
             return account
+        # invalid balance amount
+        except psycopg2.errors.CheckViolation as e:
+            connection.rollback()
+            raise OverDraftError(
+                f'Invalid balance amount. Can not create the account.')
         # 2) raise AccountNotFoundError not present if fail
         except TypeError:
             raise AccountNotFoundError(f'Account with id: {account.account_id} was not found.')

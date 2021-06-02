@@ -14,3 +14,251 @@
 2021-06-01 22:23:52,554 INFO 127.0.0.1 - - [01/Jun/2021 22:23:52] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
 2021-06-01 22:23:56,500 INFO 127.0.0.1 - - [01/Jun/2021 22:23:56] "GET /clients HTTP/1.1" 200 -
 2021-06-01 22:24:00,903 INFO 127.0.0.1 - - [01/Jun/2021 22:24:00] "[33mGET /clients/7 HTTP/1.1[0m" 404 -
+2021-06-02 11:05:20,177 INFO  * Restarting with stat
+2021-06-02 11:05:20,813 WARNING  * Debugger is active!
+2021-06-02 11:05:20,819 INFO  * Debugger PIN: 200-860-340
+2021-06-02 11:05:20,849 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 11:05:26,092 INFO 127.0.0.1 - - [02/Jun/2021 11:05:26] "GET /clients HTTP/1.1" 200 -
+2021-06-02 11:05:30,323 INFO 127.0.0.1 - - [02/Jun/2021 11:05:30] "GET /accounts HTTP/1.1" 200 -
+2021-06-02 11:05:33,083 INFO 127.0.0.1 - - [02/Jun/2021 11:05:33] "[33mGET /clients/2/accounts HTTP/1.1[0m" 404 -
+2021-06-02 11:05:41,157 INFO 127.0.0.1 - - [02/Jun/2021 11:05:41] "GET /clients/1/accounts?amountLessThan=10000&amountGreaterThan=1 HTTP/1.1" 200 -
+2021-06-02 11:05:43,530 INFO 127.0.0.1 - - [02/Jun/2021 11:05:43] "[33mGET /clients/2/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-02 11:05:50,667 INFO 127.0.0.1 - - [02/Jun/2021 11:05:50] "GET /clients/1/accounts?amountLessThan=10000&amountGreaterThan=1 HTTP/1.1" 200 -
+2021-06-02 11:11:25,500 INFO 127.0.0.1 - - [02/Jun/2021 11:11:25] "GET /clients/1/accounts?amountLessThan=10000&amountGreaterThan=1 HTTP/1.1" 200 -
+2021-06-02 11:17:03,816 INFO 127.0.0.1 - - [02/Jun/2021 11:17:03] "[33mPATCH /clients/1/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-02 11:21:47,944 INFO 127.0.0.1 - - [02/Jun/2021 11:21:47] "GET /clients HTTP/1.1" 200 -
+2021-06-02 11:21:52,790 INFO 127.0.0.1 - - [02/Jun/2021 11:21:52] "[33mGET /clients/7 HTTP/1.1[0m" 404 -
+2021-06-02 11:21:58,022 INFO 127.0.0.1 - - [02/Jun/2021 11:21:58] "[33mGET /clients/2/accounts HTTP/1.1[0m" 404 -
+2021-06-02 11:22:04,114 INFO 127.0.0.1 - - [02/Jun/2021 11:22:04] "GET /clients/1/accounts?amountLessThan=10000&amountGreaterThan=1 HTTP/1.1" 200 -
+2021-06-02 11:22:07,790 INFO 127.0.0.1 - - [02/Jun/2021 11:22:07] "[33mGET /clients/2/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-02 11:22:11,315 INFO 127.0.0.1 - - [02/Jun/2021 11:22:11] "GET /accounts HTTP/1.1" 200 -
+2021-06-02 11:27:05,932 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\daos\\account_dao_postgres.py', reloading
+2021-06-02 11:27:05,986 INFO  * Restarting with stat
+2021-06-02 11:27:06,648 WARNING  * Debugger is active!
+2021-06-02 11:27:06,650 INFO  * Debugger PIN: 200-860-340
+2021-06-02 11:27:06,681 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 11:46:41,791 INFO 127.0.0.1 - - [02/Jun/2021 11:46:41] "[33mPATCH /clients/2/accounts/2/transfer/1 HTTP/1.1[0m" 404 -
+2021-06-02 11:46:45,893 INFO 127.0.0.1 - - [02/Jun/2021 11:46:45] "[33mPATCH /clients/2/accounts/2/transfer/1 HTTP/1.1[0m" 404 -
+2021-06-02 11:46:53,626 INFO 127.0.0.1 - - [02/Jun/2021 11:46:53] "[33mPATCH /clients/1/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-02 12:06:20,543 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 12:06:20,586 INFO  * Restarting with stat
+2021-06-02 12:06:21,396 WARNING  * Debugger is active!
+2021-06-02 12:06:21,398 INFO  * Debugger PIN: 200-860-340
+2021-06-02 12:06:21,427 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 12:17:10,980 INFO 127.0.0.1 - - [02/Jun/2021 12:17:10] "GET /clients HTTP/1.1" 200 -
+2021-06-02 12:20:41,856 INFO 127.0.0.1 - - [02/Jun/2021 12:20:41] "[33mGET /clients/7 HTTP/1.1[0m" 404 -
+2021-06-02 12:21:16,365 INFO 127.0.0.1 - - [02/Jun/2021 12:21:16] "GET /clients HTTP/1.1" 200 -
+2021-06-02 12:21:42,655 INFO 127.0.0.1 - - [02/Jun/2021 12:21:42] "[33mGET /clients/7 HTTP/1.1[0m" 404 -
+2021-06-02 12:21:55,705 INFO 127.0.0.1 - - [02/Jun/2021 12:21:55] "[33mPUT /clients/9 HTTP/1.1[0m" 404 -
+2021-06-02 12:21:59,495 INFO 127.0.0.1 - - [02/Jun/2021 12:21:59] "[33mDELETE /clients/9 HTTP/1.1[0m" 404 -
+2021-06-02 12:22:06,089 INFO 127.0.0.1 - - [02/Jun/2021 12:22:06] "[33mPOST /clients/3/accounts HTTP/1.1[0m" 404 -
+2021-06-02 12:22:15,103 INFO 127.0.0.1 - - [02/Jun/2021 12:22:15] "[33mGET /clients/2/accounts HTTP/1.1[0m" 404 -
+2021-06-02 12:22:17,810 INFO 127.0.0.1 - - [02/Jun/2021 12:22:17] "GET /clients/1/accounts?amountLessThan=10000&amountGreaterThan=1 HTTP/1.1" 200 -
+2021-06-02 12:22:23,119 INFO 127.0.0.1 - - [02/Jun/2021 12:22:23] "[33mGET /clients/2/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-02 12:23:45,018 INFO 127.0.0.1 - - [02/Jun/2021 12:23:45] "GET /clients HTTP/1.1" 200 -
+2021-06-02 12:23:50,760 INFO 127.0.0.1 - - [02/Jun/2021 12:23:50] "[33mGET /clients/7 HTTP/1.1[0m" 404 -
+2021-06-02 12:23:55,819 INFO 127.0.0.1 - - [02/Jun/2021 12:23:55] "[33mDELETE /clients/9 HTTP/1.1[0m" 404 -
+2021-06-02 12:24:00,571 INFO 127.0.0.1 - - [02/Jun/2021 12:24:00] "[33mPOST /clients/3/accounts HTTP/1.1[0m" 404 -
+2021-06-02 12:24:02,737 INFO 127.0.0.1 - - [02/Jun/2021 12:24:02] "[33mGET /clients/2/accounts HTTP/1.1[0m" 404 -
+2021-06-02 12:24:06,257 INFO 127.0.0.1 - - [02/Jun/2021 12:24:06] "GET /clients/1/accounts?amountLessThan=10000&amountGreaterThan=1 HTTP/1.1" 200 -
+2021-06-02 12:25:10,503 INFO 127.0.0.1 - - [02/Jun/2021 12:25:10] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-06-02 12:25:25,367 INFO 127.0.0.1 - - [02/Jun/2021 12:25:25] "GET /clients/10 HTTP/1.1" 200 -
+2021-06-02 12:25:33,888 INFO 127.0.0.1 - - [02/Jun/2021 12:25:33] "PUT /clients/10 HTTP/1.1" 200 -
+2021-06-02 12:25:42,334 INFO 127.0.0.1 - - [02/Jun/2021 12:25:42] "[35m[1mDELETE /clients/10 HTTP/1.1[0m" 205 -
+2021-06-02 12:25:48,847 INFO 127.0.0.1 - - [02/Jun/2021 12:25:48] "[33mGET /clients/10 HTTP/1.1[0m" 404 -
+2021-06-02 12:26:02,776 INFO 127.0.0.1 - - [02/Jun/2021 12:26:02] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 201 -
+2021-06-02 12:26:26,284 INFO 127.0.0.1 - - [02/Jun/2021 12:26:26] "GET /clients/3/accounts/21 HTTP/1.1" 200 -
+2021-06-02 12:26:49,865 INFO 127.0.0.1 - - [02/Jun/2021 12:26:49] "[35m[1mDELETE /clients/3/accounts/21 HTTP/1.1[0m" 205 -
+2021-06-02 12:27:13,858 INFO 127.0.0.1 - - [02/Jun/2021 12:27:13] "PATCH /clients/1/accounts/1 HTTP/1.1" 200 -
+2021-06-02 12:27:29,493 INFO 127.0.0.1 - - [02/Jun/2021 12:27:29] "[33mPATCH /clients/2/accounts/2/transfer/1 HTTP/1.1[0m" 404 -
+2021-06-02 12:27:46,096 INFO 127.0.0.1 - - [02/Jun/2021 12:27:46] "[31m[1mPATCH /clients/1/accounts/1 HTTP/1.1[0m" 422 -
+2021-06-02 12:28:01,586 INFO 127.0.0.1 - - [02/Jun/2021 12:28:01] "[33mPATCH /clients/2/accounts/2/transfer/1 HTTP/1.1[0m" 404 -
+2021-06-02 12:28:11,035 INFO 127.0.0.1 - - [02/Jun/2021 12:28:11] "[33mPATCH /clients/1/accounts/2/transfer/1 HTTP/1.1[0m" 404 -
+2021-06-02 12:28:16,907 INFO 127.0.0.1 - - [02/Jun/2021 12:28:16] "[33mPATCH /clients/1/accounts/1/transfer/3 HTTP/1.1[0m" 404 -
+2021-06-02 12:28:22,893 INFO 127.0.0.1 - - [02/Jun/2021 12:28:22] "GET /accounts HTTP/1.1" 200 -
+2021-06-02 12:34:12,977 INFO 127.0.0.1 - - [02/Jun/2021 12:34:12] "[35m[1mDELETE /clients/3/accounts/21 HTTP/1.1[0m" 500 -
+2021-06-02 12:34:17,744 INFO 127.0.0.1 - - [02/Jun/2021 12:34:17] "[35m[1mDELETE /clients/3/accounts/21 HTTP/1.1[0m" 500 -
+2021-06-02 12:36:05,533 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 12:36:05,581 INFO  * Restarting with stat
+2021-06-02 12:36:06,305 WARNING  * Debugger is active!
+2021-06-02 12:36:06,307 INFO  * Debugger PIN: 200-860-340
+2021-06-02 12:36:06,337 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 12:36:14,784 INFO 127.0.0.1 - - [02/Jun/2021 12:36:14] "[33mDELETE /clients/3/accounts/21 HTTP/1.1[0m" 404 -
+2021-06-02 12:41:34,889 INFO 127.0.0.1 - - [02/Jun/2021 12:41:34] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 500 -
+2021-06-02 12:41:56,335 INFO 127.0.0.1 - - [02/Jun/2021 12:41:56] "[35m[1mGET /clients HTTP/1.1[0m" 500 -
+2021-06-02 12:43:46,916 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\daos\\account_dao_postgres.py', reloading
+2021-06-02 12:43:46,969 INFO  * Restarting with stat
+2021-06-02 12:43:47,693 WARNING  * Debugger is active!
+2021-06-02 12:43:47,695 INFO  * Debugger PIN: 200-860-340
+2021-06-02 12:43:47,726 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 12:44:22,685 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\daos\\account_dao_postgres.py', reloading
+2021-06-02 12:44:22,734 INFO  * Restarting with stat
+2021-06-02 12:44:23,535 WARNING  * Debugger is active!
+2021-06-02 12:44:23,537 INFO  * Debugger PIN: 200-860-340
+2021-06-02 12:44:23,567 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 12:44:41,036 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\daos\\account_dao_postgres.py', reloading
+2021-06-02 12:44:41,095 INFO  * Restarting with stat
+2021-06-02 12:44:41,934 WARNING  * Debugger is active!
+2021-06-02 12:44:41,937 INFO  * Debugger PIN: 200-860-340
+2021-06-02 12:44:41,965 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 12:45:47,720 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 12:45:47,777 INFO  * Restarting with stat
+2021-06-02 12:45:48,425 WARNING  * Debugger is active!
+2021-06-02 12:45:48,428 INFO  * Debugger PIN: 200-860-340
+2021-06-02 12:45:48,455 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 12:45:58,728 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 12:45:58,769 INFO  * Restarting with stat
+2021-06-02 12:45:59,494 WARNING  * Debugger is active!
+2021-06-02 12:45:59,497 INFO  * Debugger PIN: 200-860-340
+2021-06-02 12:45:59,528 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 12:46:38,608 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 12:46:38,648 INFO  * Restarting with stat
+2021-06-02 12:46:39,294 WARNING  * Debugger is active!
+2021-06-02 12:46:39,297 INFO  * Debugger PIN: 200-860-340
+2021-06-02 12:46:39,323 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 12:46:48,850 INFO 127.0.0.1 - - [02/Jun/2021 12:46:48] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 500 -
+2021-06-02 12:47:20,660 INFO  * Restarting with stat
+2021-06-02 12:47:21,332 WARNING  * Debugger is active!
+2021-06-02 12:47:21,334 INFO  * Debugger PIN: 200-860-340
+2021-06-02 12:47:21,363 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 12:47:24,916 INFO 127.0.0.1 - - [02/Jun/2021 12:47:24] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 500 -
+2021-06-02 12:47:28,616 INFO 127.0.0.1 - - [02/Jun/2021 12:47:28] "[35m[1mGET /clients HTTP/1.1[0m" 500 -
+2021-06-02 12:49:08,276 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\daos\\account_dao_postgres.py', reloading
+2021-06-02 12:49:08,317 INFO  * Restarting with stat
+2021-06-02 12:49:09,129 WARNING  * Debugger is active!
+2021-06-02 12:49:09,131 INFO  * Debugger PIN: 200-860-340
+2021-06-02 12:49:09,161 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 12:49:24,568 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\daos\\account_dao_postgres.py', reloading
+2021-06-02 12:49:24,608 INFO  * Restarting with stat
+2021-06-02 12:49:25,265 WARNING  * Debugger is active!
+2021-06-02 12:49:25,268 INFO  * Debugger PIN: 200-860-340
+2021-06-02 12:49:25,297 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 12:49:31,470 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\daos\\account_dao_postgres.py', reloading
+2021-06-02 12:49:31,514 INFO  * Restarting with stat
+2021-06-02 12:49:32,296 WARNING  * Debugger is active!
+2021-06-02 12:49:32,298 INFO  * Debugger PIN: 200-860-340
+2021-06-02 12:49:32,326 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 12:49:48,491 INFO 127.0.0.1 - - [02/Jun/2021 12:49:48] "GET /clients HTTP/1.1" 200 -
+2021-06-02 12:49:53,214 INFO 127.0.0.1 - - [02/Jun/2021 12:49:53] "[33mPOST /clients/3/accounts HTTP/1.1[0m" 404 -
+2021-06-02 12:50:12,599 INFO 127.0.0.1 - - [02/Jun/2021 12:50:12] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 500 -
+2021-06-02 12:50:26,232 INFO 127.0.0.1 - - [02/Jun/2021 12:50:26] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 500 -
+2021-06-02 12:50:40,407 INFO 127.0.0.1 - - [02/Jun/2021 12:50:40] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 500 -
+2021-06-02 12:55:18,835 INFO  * Restarting with stat
+2021-06-02 12:55:19,466 WARNING  * Debugger is active!
+2021-06-02 12:55:19,468 INFO  * Debugger PIN: 200-860-340
+2021-06-02 12:55:19,499 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 12:55:23,558 INFO 127.0.0.1 - - [02/Jun/2021 12:55:23] "[35m[1mGET /clients/fdasf HTTP/1.1[0m" 500 -
+2021-06-02 12:55:42,146 INFO 127.0.0.1 - - [02/Jun/2021 12:55:42] "GET /clients/2 HTTP/1.1" 200 -
+2021-06-02 12:55:49,206 INFO 127.0.0.1 - - [02/Jun/2021 12:55:49] "GET /clients/3 HTTP/1.1" 200 -
+2021-06-02 12:55:54,224 INFO 127.0.0.1 - - [02/Jun/2021 12:55:54] "GET /clients/4 HTTP/1.1" 200 -
+2021-06-02 12:55:59,866 INFO 127.0.0.1 - - [02/Jun/2021 12:55:59] "GET /clients/5 HTTP/1.1" 200 -
+2021-06-02 12:56:05,399 INFO 127.0.0.1 - - [02/Jun/2021 12:56:05] "GET /clients/6 HTTP/1.1" 200 -
+2021-06-02 13:12:36,813 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\daos\\account_dao_postgres.py', reloading
+2021-06-02 13:12:36,859 INFO  * Restarting with stat
+2021-06-02 13:12:37,746 WARNING  * Debugger is active!
+2021-06-02 13:12:37,749 INFO  * Debugger PIN: 200-860-340
+2021-06-02 13:12:37,778 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 13:15:41,280 INFO 127.0.0.1 - - [02/Jun/2021 13:15:41] "[35m[1mPUT /clients/10ff HTTP/1.1[0m" 500 -
+2021-06-02 13:16:41,442 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 13:16:41,506 INFO  * Restarting with stat
+2021-06-02 13:16:42,210 WARNING  * Debugger is active!
+2021-06-02 13:16:42,212 INFO  * Debugger PIN: 200-860-340
+2021-06-02 13:16:42,240 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 13:16:49,446 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 13:16:49,490 INFO  * Restarting with stat
+2021-06-02 13:16:50,130 WARNING  * Debugger is active!
+2021-06-02 13:16:50,133 INFO  * Debugger PIN: 200-860-340
+2021-06-02 13:16:50,160 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 13:16:54,289 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 13:16:54,347 INFO  * Restarting with stat
+2021-06-02 13:16:54,978 WARNING  * Debugger is active!
+2021-06-02 13:16:54,981 INFO  * Debugger PIN: 200-860-340
+2021-06-02 13:16:55,009 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 13:17:02,223 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 13:17:02,268 INFO  * Restarting with stat
+2021-06-02 13:17:02,888 WARNING  * Debugger is active!
+2021-06-02 13:17:02,891 INFO  * Debugger PIN: 200-860-340
+2021-06-02 13:17:02,923 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 13:17:07,045 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 13:17:07,086 INFO  * Restarting with stat
+2021-06-02 13:17:07,861 WARNING  * Debugger is active!
+2021-06-02 13:17:07,865 INFO  * Debugger PIN: 200-860-340
+2021-06-02 13:17:07,895 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 13:17:09,975 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 13:17:10,040 INFO  * Restarting with stat
+2021-06-02 13:17:10,772 WARNING  * Debugger is active!
+2021-06-02 13:17:10,774 INFO  * Debugger PIN: 200-860-340
+2021-06-02 13:17:10,804 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 13:17:22,120 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 13:17:22,174 INFO  * Restarting with stat
+2021-06-02 13:17:22,867 WARNING  * Debugger is active!
+2021-06-02 13:17:22,869 INFO  * Debugger PIN: 200-860-340
+2021-06-02 13:17:22,898 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 13:17:26,000 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 13:17:26,046 INFO  * Restarting with stat
+2021-06-02 13:17:26,686 WARNING  * Debugger is active!
+2021-06-02 13:17:26,689 INFO  * Debugger PIN: 200-860-340
+2021-06-02 13:17:26,719 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 13:17:36,572 INFO 127.0.0.1 - - [02/Jun/2021 13:17:36] "[35m[1mPUT /clients/10ff HTTP/1.1[0m" 500 -
+2021-06-02 13:19:07,534 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 13:19:07,574 INFO  * Restarting with stat
+2021-06-02 13:19:08,225 WARNING  * Debugger is active!
+2021-06-02 13:19:08,227 INFO  * Debugger PIN: 200-860-340
+2021-06-02 13:19:08,254 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 13:19:18,646 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 13:19:18,695 INFO  * Restarting with stat
+2021-06-02 13:19:19,458 WARNING  * Debugger is active!
+2021-06-02 13:19:19,460 INFO  * Debugger PIN: 200-860-340
+2021-06-02 13:19:19,488 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 13:19:23,573 INFO 127.0.0.1 - - [02/Jun/2021 13:19:23] "[35m[1mPUT /clients/10ff HTTP/1.1[0m" 500 -
+2021-06-02 13:19:42,083 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 13:19:42,126 INFO  * Restarting with stat
+2021-06-02 13:19:42,800 WARNING  * Debugger is active!
+2021-06-02 13:19:42,802 INFO  * Debugger PIN: 200-860-340
+2021-06-02 13:19:42,838 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 13:19:51,088 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 13:19:51,158 INFO  * Restarting with stat
+2021-06-02 13:19:51,873 WARNING  * Debugger is active!
+2021-06-02 13:19:51,876 INFO  * Debugger PIN: 200-860-340
+2021-06-02 13:19:51,905 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 13:19:59,125 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 13:19:59,178 INFO  * Restarting with stat
+2021-06-02 13:19:59,840 WARNING  * Debugger is active!
+2021-06-02 13:19:59,842 INFO  * Debugger PIN: 200-860-340
+2021-06-02 13:19:59,873 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 13:20:07,703 INFO 127.0.0.1 - - [02/Jun/2021 13:20:07] "[35m[1mPUT /clients/10ff HTTP/1.1[0m" 500 -
+2021-06-02 13:20:09,898 INFO 127.0.0.1 - - [02/Jun/2021 13:20:09] "[35m[1mPUT /clients/10ff HTTP/1.1[0m" 500 -
+2021-06-02 13:20:30,802 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 13:20:30,849 INFO  * Restarting with stat
+2021-06-02 13:20:31,607 WARNING  * Debugger is active!
+2021-06-02 13:20:31,609 INFO  * Debugger PIN: 200-860-340
+2021-06-02 13:20:31,636 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 13:20:34,960 INFO 127.0.0.1 - - [02/Jun/2021 13:20:34] "[35m[1mPUT /clients/10ff HTTP/1.1[0m" 500 -
+2021-06-02 13:20:44,022 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 13:20:44,087 INFO  * Restarting with stat
+2021-06-02 13:20:44,749 WARNING  * Debugger is active!
+2021-06-02 13:20:44,752 INFO  * Debugger PIN: 200-860-340
+2021-06-02 13:20:44,782 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 13:22:09,434 INFO 127.0.0.1 - - [02/Jun/2021 13:22:09] "[33mPUT /clients/10 HTTP/1.1[0m" 404 -
+2021-06-02 13:22:16,252 INFO 127.0.0.1 - - [02/Jun/2021 13:22:16] "[35m[1mPUT /clients/10a HTTP/1.1[0m" 500 -
+2021-06-02 13:22:47,193 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 13:22:47,242 INFO  * Restarting with stat
+2021-06-02 13:22:47,984 WARNING  * Debugger is active!
+2021-06-02 13:22:47,987 INFO  * Debugger PIN: 200-860-340
+2021-06-02 13:22:48,016 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 13:22:51,738 INFO 127.0.0.1 - - [02/Jun/2021 13:22:51] "[33mPUT /clients/10a HTTP/1.1[0m" 404 -
+2021-06-02 13:23:25,729 INFO 127.0.0.1 - - [02/Jun/2021 13:23:25] "[33mPUT /clients/10 HTTP/1.1[0m" 404 -
+2021-06-02 13:23:32,145 INFO 127.0.0.1 - - [02/Jun/2021 13:23:32] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 500 -
+2021-06-02 13:23:41,203 INFO 127.0.0.1 - - [02/Jun/2021 13:23:41] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 500 -
+2021-06-02 13:24:10,628 INFO 127.0.0.1 - - [02/Jun/2021 13:24:10] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 500 -
+2021-06-02 13:24:22,518 INFO  * Restarting with stat
+2021-06-02 13:24:23,121 WARNING  * Debugger is active!
+2021-06-02 13:24:23,124 INFO  * Debugger PIN: 200-860-340
+2021-06-02 13:24:23,152 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 13:24:26,423 INFO 127.0.0.1 - - [02/Jun/2021 13:24:26] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 500 -
+2021-06-02 13:25:14,859 INFO 127.0.0.1 - - [02/Jun/2021 13:25:14] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 500 -
+2021-06-02 13:43:09,978 INFO  * Restarting with stat
+2021-06-02 13:43:10,984 WARNING  * Debugger is active!
+2021-06-02 13:43:10,990 INFO  * Debugger PIN: 200-860-340
+2021-06-02 13:43:11,057 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 13:43:24,708 INFO 127.0.0.1 - - [02/Jun/2021 13:43:24] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 500 -
