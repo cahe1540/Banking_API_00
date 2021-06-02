@@ -7,7 +7,7 @@ from exceptions.client_not_found_error import ClientNotFoundError
 client1: Client = Client(0, 'Carlos', 'Herrera')
 client2: Client = Client(0, 'Sarah', 'Connor')
 client3: Client = Client(0, 'Flor', 'Anastasia')
-get_client: Client = Client(7, 'Carlos', 'Herrera')
+get_client: Client = Client(7, 'Rick', 'Morty')
 client2_update: Client = Client(6, 'Xena', 'Hercules')
 update_fail: Client = Client(222, 'A', 'B')
 

@@ -53,7 +53,7 @@ class BankServicesImpl(BankServices, AccountServicesImpl, ClientServicesImpl):
     def delete_client_by_id(self, client_id: int) -> bool:
         # 1) delete all accounts by client ID
         result = self.accountDao.delete_all_accounts_by_client_id(client_id)
-        print(result)
+
         # 2) delete client by id
         return self.clientDao.delete_client(client_id)
 

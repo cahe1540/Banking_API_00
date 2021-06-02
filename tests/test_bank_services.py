@@ -47,20 +47,20 @@ def test_add_account_to_client():
     acct = Account(1, 'checking', 1000.00, 4)
     bankService.clientDao.get_client_by_Id = MagicMock(return_value = {4: Client(4, 'Carlos', 'Herrera')})
     bankService.accountDao.create_account = MagicMock(return_value = acct)
-    new_acct = bankService.create_account_for_client(acct)
+    new_acct = bankService.create_account_for_client(4, acct)
     assert str(new_acct) == str(acct)
 
 
 # fail to create account because user does not exist
 def test_add_account_to_client_fail():
     acct = Account(1, 'checking', 1000.00, 4)
-    bankService.clientDao.get_client_by_Id = Mock(side_effect= ClientNotFoundError('Client with id: 1 was not found, client could not be deleted.'))
+    bankService.clientDao.get_client_by_Id = Mock(side_effect= ClientNotFoundError('Client with id: 1 was not found.'))
     bankService.accountDao.create_account = MagicMock(return_value=acct)
     try:
-        new_acct = bankService.create_account_for_client(acct)
+        new_acct = bankService.create_account_for_client(4, acct)
         assert False
     except ClientNotFoundError as e:
-        assert str(e) == 'Client with id: 1 was not found, client could not be deleted.'
+        assert str(e) == 'Client with id: 1 was not found.'
 
 
 # successfully transferred funds
