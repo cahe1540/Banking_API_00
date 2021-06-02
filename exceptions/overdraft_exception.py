@@ -1,0 +1,2 @@
+class OverDraftError(Exception):
+    pass

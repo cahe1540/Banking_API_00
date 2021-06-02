@@ -1,0 +1,16 @@
+2021-06-01 22:21:40,191 INFO  * Restarting with stat
+2021-06-01 22:21:41,247 WARNING  * Debugger is active!
+2021-06-01 22:21:41,255 INFO  * Debugger PIN: 200-860-340
+2021-06-01 22:21:41,311 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-01 22:22:31,799 INFO 127.0.0.1 - - [01/Jun/2021 22:22:31] "GET /clients HTTP/1.1" 200 -
+2021-06-01 22:22:35,957 INFO 127.0.0.1 - - [01/Jun/2021 22:22:35] "GET /clients HTTP/1.1" 200 -
+2021-06-01 22:23:05,071 INFO  * Restarting with stat
+2021-06-01 22:23:06,055 WARNING  * Debugger is active!
+2021-06-01 22:23:06,063 INFO  * Debugger PIN: 200-860-340
+2021-06-01 22:23:06,143 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-01 22:23:23,198 INFO 127.0.0.1 - - [01/Jun/2021 22:23:23] "GET /clients HTTP/1.1" 200 -
+2021-06-01 22:23:29,529 INFO 127.0.0.1 - - [01/Jun/2021 22:23:29] "GET /accounts HTTP/1.1" 200 -
+2021-06-01 22:23:36,708 INFO 127.0.0.1 - - [01/Jun/2021 22:23:36] "GET /accounts HTTP/1.1" 200 -
+2021-06-01 22:23:52,554 INFO 127.0.0.1 - - [01/Jun/2021 22:23:52] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-06-01 22:23:56,500 INFO 127.0.0.1 - - [01/Jun/2021 22:23:56] "GET /clients HTTP/1.1" 200 -
+2021-06-01 22:24:00,903 INFO 127.0.0.1 - - [01/Jun/2021 22:24:00] "[33mGET /clients/7 HTTP/1.1[0m" 404 -
