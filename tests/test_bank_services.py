@@ -19,7 +19,7 @@ bankService = BankServicesImpl(accountDao, clientDao)
 def test_delete_client_by_id():
     bankService.accountDao.delete_all_accounts_by_client_id = MagicMock(return_value = 2)
     bankService.clientDao.delete_client = MagicMock(return_value=True)
-    result = bankService.delete_client_by_id(1)
+    result = bankService.delete_client_and_accounts(1)
     assert result is True
 
 
@@ -28,7 +28,7 @@ def test_fail_delete_client_by_id():
     try:
         bankService.accountDao.delete_all_accounts_by_client_id = MagicMock(return_value=0)
         bankService.clientDao.delete_client = Mock(side_effect=ClientNotFoundError('Client with id: 1 was not found, client could not be deleted.'))
-        result = bankService.delete_client_by_id(1)
+        result = bankService.delete_client_and_accounts(1)
         assert False
     except ClientNotFoundError as e:
         assert str(e) == f'Client with id: 1 was not found, client could not be deleted.'
@@ -38,7 +38,7 @@ def test_fail_delete_client_by_id():
 def test_delete_client_by_id_no_accounts():
     bankService.accountDao.delete_all_accounts_by_client_id = MagicMock(return_value = 0)
     bankService.clientDao.delete_client = MagicMock(return_value = True)
-    result = bankService.delete_client_by_id(1)
+    result = bankService.delete_client_and_accounts(1)
     assert result is True
 
 

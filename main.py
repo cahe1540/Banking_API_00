@@ -5,9 +5,9 @@ from daos.client_dao_postgres import ClientDAOPostgres
 from entities.client import Client
 from entities.account import Account
 from utils.response_as_json import response_as_json
-from exceptions.client_not_found_error import ClientNotFoundError
-from exceptions.account_not_found_error import AccountNotFoundError
-from exceptions.overdraft_exception import OverDraftError
+from utils.catch_invalid_inputs import catch_invalid_inputs
+from utils.handle_exceptions import handle_exceptions_no_args, handle_exceptions_w_args
+
 import logging
 
 app = Flask(__name__)
@@ -20,218 +20,194 @@ bankingService = BankServicesImpl(accountDao, clientDao)
 
 # Create a new client
 @app.route("/clients", methods=['POST'])
+@handle_exceptions_no_args
 def create_client():
-    try:
         client = list(request.json.values())
         result = bankingService.add_client(Client(*client))
         return response_as_json("success", 201, result.as_json_dict()), 201
-    except Exception as e:
-        return response_as_json(str(e), 500), 500
 
 
-# Create account for client with id of.
+#Create account for client with id of.
 @app.route("/clients/<client_id>/accounts", methods=['POST'])
-def create_account_for_client(client_id: int):
-    try:
-        body = request.json
-        account = Account(0, body["type"], body["balance"], int(client_id))
-        result = bankingService.create_account_for_client(client_id, account)
-        return response_as_json("success", 201, result.as_json_dict()), 201
-    except ValueError as e:
-        return response_as_json(str(e), 404), 404
-    except OverDraftError as e:
-        return response_as_json(str(e), 404), 404
-    except ClientNotFoundError as e:
-        return response_as_json(str(e), 404), 404
-    except Exception as e:
-        return response_as_json(str(e), 500), 500
+@handle_exceptions_w_args
+def create_account_for_client(client_id: str):
+    # 1) get body
+    body = request.json
+
+    # 2) make sure input data is valid
+    acct_type = catch_invalid_inputs("string", body["type"])
+    balance = catch_invalid_inputs("number", body["balance"])
+    catch_invalid_inputs("int", int(client_id))
+
+    # 3) handle request and return data
+    account = Account(0, acct_type, balance, int(client_id))
+    result = bankingService.create_account_for_client(int(client_id), account)
+    return response_as_json("success", 201, result.as_json_dict()), 201
 
 
 # Get all clients
 @app.route("/clients", methods=['GET'])
+@handle_exceptions_no_args
 def get_all_clients():
-    try:
-        results = bankingService.retrieve_all_clients()
-        json_list = [client.as_json_dict() for client in results]
-        return response_as_json("success", 200, json_list), 200
-    except Exception as e:
-        return response_as_json(str(e), 500), 500
+    results = bankingService.retrieve_all_clients()
+    json_list = [client.as_json_dict() for client in results]
+    return response_as_json("success", 200, json_list), 200
 
 
 # get client by id
 @app.route("/clients/<user_id>", methods=['GET'])
+@handle_exceptions_w_args
 def get_client_by_id(user_id: str):
-    try:
-        client = bankingService.retrieve_client_by_id(int(user_id))
-        return response_as_json('success', 200, client.as_json_dict()), 200
-    except ValueError as e:
-        return response_as_json(str(e), 404), 404
-    except ClientNotFoundError as e:
-        return response_as_json(str(e), 404), 404
-    except Exception as e:
-        return response_as_json(str(e), 500), 500
+    # 1) make sure input data is valid
+    user_id = catch_invalid_inputs("int", int(user_id))
+
+    # 2) handle request and send data
+    client = bankingService.retrieve_client_by_id(int(user_id))
+    return response_as_json('success', 200, client.as_json_dict()), 200
 
 
 # get all accounts for client by client_id, or get all account within range
 @app.route("/clients/<client_id>/accounts", methods=['GET'])
+@handle_exceptions_w_args
 def get_all_clients_accounts(client_id: str):
-    try:
-        upper = lower = accounts = 0
-        if request.args:
-            upper = float(request.args["amountLessThan"])
-            lower = float(request.args["amountGreaterThan"])
-        if upper and lower:
-            print(upper, lower)
-            accounts = bankingService.retrieve_client_accounts_within_range(int(client_id), lower, upper)
-        else:
-            accounts = bankingService.retrieve_all_clients_accounts(int(client_id))
-        json_list = [acct.as_json_dict() for acct in accounts]
-        return response_as_json('success', 200, json_list), 200
-    except TypeError as e:
-        return response_as_json(str(e), 404), 404
-    except ClientNotFoundError as e:
-        return response_as_json(str(e), 404), 404
-    except Exception as e:
-        return response_as_json(str(e), 500), 500
+    # 1) validate client id
+    client_id = catch_invalid_inputs("int", int(client_id))
+    upper = lower = accounts = 0
+
+    # 2) check for queries
+    if request.args:
+        # 3) get queries and validate them
+        upper = float(request.args["amountLessThan"])
+        lower = float(request.args["amountGreaterThan"])
+        catch_invalid_inputs("number", upper)
+        catch_invalid_inputs("number", lower)
+
+    # 3) if query strings, get accounts in range
+    if upper and lower:
+        accounts = bankingService.retrieve_client_accounts_within_range(int(client_id), lower, upper)
+    # 4) otherwise just get all client's accounts
+    else:
+        accounts = bankingService.retrieve_all_clients_accounts(int(client_id))
+
+    # 5) make data json friendly and return
+    json_list = [acct.as_json_dict() for acct in accounts]
+    return response_as_json('success', 200, json_list), 200
 
 
 # get account by id for client
 @app.route("/clients/<client_id>/accounts/<account_id>", methods=["GET"])
+@handle_exceptions_w_args
 def get_account_by_client_id(account_id: str, client_id: str):
-    try:
-        result = bankingService.retrieve_client_account_by_id(int(account_id), int(client_id))
-        return response_as_json("success", 200, result.as_json_dict()), 200
-    except ValueError as e:
-        return response_as_json(str(e), 404), 404
-    except AccountNotFoundError as e:
-        return response_as_json(str(e), 404), 404
-    except ClientNotFoundError as e:
-        return response_as_json(str(e), 404), 404
-    except Exception as e:
-        return response_as_json(str(e), 500), 500
+    # 1) validate data
+    catch_invalid_inputs("int", int(account_id))
+    catch_invalid_inputs("int", int(client_id))
+
+    # 2) handle request and return
+    result = bankingService.retrieve_client_account_by_id(int(account_id), int(client_id))
+    return response_as_json("success", 200, result.as_json_dict()), 200
 
 
 # get all accounts
 @app.route("/accounts", methods=['GET'])
+@handle_exceptions_no_args
 def get_all_accounts():
-    try:
-        results = bankingService.retrieve_all_accounts()
-        json_list = [acct.as_json_dict() for acct in results]
-        return response_as_json("success", 200, json_list), 200
-    except Exception as e:
-        return response_as_json(str(e), 500), 500
+    results = bankingService.retrieve_all_accounts()
+    json_list = [acct.as_json_dict() for acct in results]
+    return response_as_json("success", 200, json_list), 200
 
 
 # Update
 # update account by id and client id
-@app.route("/clients/<client_id>/accounts/<account_id>", methods = ["PUT"])
+@app.route("/clients/<client_id>/accounts/<account_id>", methods=["PUT"])
+@handle_exceptions_w_args
 def update_users_account_by_account_id(account_id: str, client_id: str):
-    try:
-        body = request.json
-        account = Account(body["accountId"], body["accountType"], body["balance"], body["clientId"])
-        updated = bankingService.update_clients_account_by_account_id(int(client_id), int(account_id), account)
-        return response_as_json("success", 200, updated.as_json_dict()), 200
-    except ValueError as e:
-        return response_as_json(str(e), 404), 404
-    except OverDraftError as e:
-        return response_as_json(str(e), 404), 404
-    except TypeError as e:
-        return response_as_json(str(e), 400), 400
-    except AccountNotFoundError as e:
-        return response_as_json(str(e), 404), 404
-    except ClientNotFoundError as e:
-        return response_as_json(str(e), 404), 404
-    except LookupError as e:
-        return response_as_json(str(e), 400), 400
-    except Exception as e:
-        return response_as_json(str(e), 500), 500
+    body = request.json
+
+    # 1) validate data
+    catch_invalid_inputs("int", body["accountId"])
+    catch_invalid_inputs("string", body["accountType"])
+    catch_invalid_inputs("number", body["balance"])
+    catch_invalid_inputs("int", body["clientId"])
+    catch_invalid_inputs("int", int(account_id))
+    catch_invalid_inputs("int", int(client_id))
+
+    # 2) handle request and return
+    account = Account(body["accountId"], body["accountType"], body["balance"], body["clientId"])
+    updated = bankingService.update_clients_account_by_account_id(int(client_id), int(account_id), account)
+    return response_as_json("success", 200, updated.as_json_dict()), 200
 
 
 # update client by client id
 @app.route("/clients/<client_id>", methods=["PUT"])
+@handle_exceptions_w_args
 def update_client(client_id: str):
-    try:
-        data = request.json
-        client = Client(int(client_id), data["firstName"], data["lastName"])
-        updated = bankingService.update_client(client)
-        return response_as_json("success", 200, updated.as_json_dict()), 200
-    except ValueError as e:
-        return response_as_json(str(e), 404), 404
-    except TypeError as e:
-        return response_as_json(str(e), 404), 404
-    except ClientNotFoundError as e:
-        return response_as_json(str(e), 404), 404
-    except Exception as e:
-        return response_as_json(str(e), 500), 500
+    data = request.json
+
+    # 1) validate data
+    catch_invalid_inputs("int", int(client_id))
+    catch_invalid_inputs("string", data["firstName"])
+    catch_invalid_inputs("string", data["lastName"])
+
+    # 2) handle request
+    client = Client(int(client_id), data["firstName"], data["lastName"])
+    updated = bankingService.update_client(client)
+    return response_as_json("success", 200, updated.as_json_dict()), 200
 
 
 # make account transfers
-@app.route("/clients/<client_id>/accounts/<account_fr>/transfer/<account_to>", methods = ["PATCH"])
+@app.route("/clients/<client_id>/accounts/<account_fr>/transfer/<account_to>", methods=["PATCH"])
+@handle_exceptions_w_args
 def account_transfer(client_id: str, account_fr: str, account_to: str):
-    try:
-        body = request.json
-        result = bankingService.transfer_clients_funds(int(client_id), body["amount"], int(account_fr), int(account_to))
-        return response_as_json("success", 201, result), 201
-    except ValueError as e:
-        return response_as_json(str(e), 404), 404
-    except AccountNotFoundError as e:
-        return response_as_json(str(e), 404), 404
-    except ClientNotFoundError as e:
-        return response_as_json(str(e), 404), 404
-    except OverDraftError as e:
-        return response_as_json(str(e), 404), 404
-    except Exception as e:
-        return response_as_json(str(e), 500), 500
+    body = request.json
+    # 1) validate data
+    catch_invalid_inputs("number", body["amount"])
+    catch_invalid_inputs("int", int(client_id))
+    catch_invalid_inputs("int", int(account_fr))
+    catch_invalid_inputs("int", int(account_to))
+
+    # 2) handle request
+    result = bankingService.transfer_clients_funds(int(client_id), body["amount"], int(account_fr), int(account_to))
+    return response_as_json("success", 201, result), 201
 
 
 # withdraw or deposit
-@app.route("/clients/<client_id>/accounts/<account_id>", methods = ["PATCH"])
+@app.route("/clients/<client_id>/accounts/<account_id>", methods=["PATCH"])
+@handle_exceptions_w_args
 def client_transaction(client_id: str, account_id: str):
-    try:
-        data = request.json
-        updated = bankingService.withdraw_or_deposit(int(account_id), int(client_id), data["transactionType"], data["amount"])
-        return response_as_json("success", 200, updated.as_json_dict()), 200
-    except ValueError as e:
-        return response_as_json(str(e), 404), 404
-    except TypeError as e:
-        return response_as_json(str(e), 400), 400
-    except OverDraftError as e:
-        return response_as_json(str(e), 422), 422
-    except AccountNotFoundError as e:
-        return response_as_json(str(e), 404), 404
-    except ClientNotFoundError as e:
-        return response_as_json(str(e), 404), 404
-    except Exception as e:
-        return response_as_json(str(e), 500), 500
+    # 1) validate data
+    data = request.json
+    catch_invalid_inputs("int", int(client_id))
+    catch_invalid_inputs("int", int(account_id))
+    catch_invalid_inputs("number", data["amount"])
+    catch_invalid_inputs("string", data["transactionType"])
+
+    # 2) submit request
+    updated = bankingService.withdraw_or_deposit(int(account_id), int(client_id), data["transactionType"],
+                                                 data["amount"])
+    return response_as_json("success", 200, updated.as_json_dict()), 200
 
 
 # Delete
-@app.route("/clients/<client_id>", methods= ["DELETE"])
+@app.route("/clients/<client_id>", methods=["DELETE"])
+@handle_exceptions_w_args
 def delete_client(client_id: str):
-    try:
-        result = bankingService.delete_client_by_id(int(client_id))
-        return response_as_json("Success", 205), 205
-    except ValueError as e:
-        return response_as_json(str(e), 404), 404
-    except ClientNotFoundError as e:
-        return response_as_json(str(e), 404), 404
-    except Exception as e:
-        return response_as_json(str(e), 500), 500
+    # 1) validate data
+    catch_invalid_inputs("int", int(client_id))
+
+    # 2) submit request
+    result = bankingService.delete_client_and_accounts(int(client_id))
+    return response_as_json("Success", 205), 205
 
 
-@app.route("/clients/<client_id>/accounts/<account_id>", methods= ["DELETE"])
+@app.route("/clients/<client_id>/accounts/<account_id>", methods=["DELETE"])
+@handle_exceptions_w_args
 def delete_account_by_both_ids(client_id: str, account_id: str):
-    try:
-        result = bankingService.delete_account_by_client_id(int(client_id), int(account_id))
-        return response_as_json("Success", 205), 205
-    except ValueError as e:
-        return response_as_json(str(e), 404), 404
-    except ClientNotFoundError as e:
-        return response_as_json(str(e), 404), 404
-    except AccountNotFoundError as e:
-        return response_as_json(str(e), 404), 404
-    except Exception as e:
-        return response_as_json(str(e), 500), 500
+    # 1) validate data
+    catch_invalid_inputs("int", int(client_id))
+    catch_invalid_inputs("int", int(account_id))
+
+    result = bankingService.delete_account_by_client_id(int(client_id), int(account_id))
+    return response_as_json("Success", 205), 205
 
 
 # Press the green button in the gutter to run the script.

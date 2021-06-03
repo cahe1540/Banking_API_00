@@ -262,3 +262,525 @@
 2021-06-02 13:43:10,990 INFO  * Debugger PIN: 200-860-340
 2021-06-02 13:43:11,057 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
 2021-06-02 13:43:24,708 INFO 127.0.0.1 - - [02/Jun/2021 13:43:24] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 500 -
+2021-06-02 18:15:08,301 INFO  * Restarting with stat
+2021-06-02 18:15:09,231 WARNING  * Debugger is active!
+2021-06-02 18:15:09,231 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:15:09,335 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 18:15:15,520 INFO 127.0.0.1 - - [02/Jun/2021 18:15:15] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 201 -
+2021-06-02 18:15:21,183 INFO 127.0.0.1 - - [02/Jun/2021 18:15:21] "GET /clients HTTP/1.1" 200 -
+2021-06-02 18:15:36,285 INFO 127.0.0.1 - - [02/Jun/2021 18:15:36] "GET /clients/2/accounts HTTP/1.1" 200 -
+2021-06-02 18:15:40,197 INFO 127.0.0.1 - - [02/Jun/2021 18:15:40] "[33mGET /clients/444/accounts HTTP/1.1[0m" 404 -
+2021-06-02 18:18:39,796 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\services\\bank_services_impl.py', reloading
+2021-06-02 18:18:39,869 INFO  * Restarting with stat
+2021-06-02 18:18:40,746 WARNING  * Debugger is active!
+2021-06-02 18:18:40,746 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:18:40,810 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 18:24:48,409 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\utils\\catch_invalid_inputs.py', reloading
+2021-06-02 18:24:48,514 INFO  * Restarting with stat
+2021-06-02 18:24:49,496 WARNING  * Debugger is active!
+2021-06-02 18:24:49,504 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:24:49,544 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 18:28:22,715 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\utils\\catch_invalid_inputs.py', reloading
+2021-06-02 18:28:22,817 INFO  * Restarting with stat
+2021-06-02 18:28:24,237 WARNING  * Debugger is active!
+2021-06-02 18:28:24,245 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:28:24,309 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 18:35:41,301 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\utils\\catch_invalid_inputs.py', reloading
+2021-06-02 18:35:41,389 INFO  * Restarting with stat
+2021-06-02 18:35:42,406 WARNING  * Debugger is active!
+2021-06-02 18:35:42,414 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:35:42,486 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 18:36:17,464 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\utils\\catch_invalid_inputs.py', reloading
+2021-06-02 18:36:17,552 INFO  * Restarting with stat
+2021-06-02 18:36:18,597 WARNING  * Debugger is active!
+2021-06-02 18:36:18,606 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:36:18,662 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 18:39:48,286 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\tests\\test_invalid_finder.py', reloading
+2021-06-02 18:39:48,361 INFO  * Restarting with stat
+2021-06-02 18:39:49,431 WARNING  * Debugger is active!
+2021-06-02 18:39:49,431 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:39:49,511 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 18:40:50,898 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\tests\\test_invalid_finder.py', reloading
+2021-06-02 18:40:50,981 INFO  * Restarting with stat
+2021-06-02 18:40:52,040 WARNING  * Debugger is active!
+2021-06-02 18:40:52,048 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:40:52,128 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 18:41:29,202 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\tests\\test_invalid_finder.py', reloading
+2021-06-02 18:41:29,283 INFO  * Restarting with stat
+2021-06-02 18:41:30,241 WARNING  * Debugger is active!
+2021-06-02 18:41:30,249 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:41:30,313 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 18:42:43,298 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\tests\\test_invalid_finder.py', reloading
+2021-06-02 18:42:43,394 INFO  * Restarting with stat
+2021-06-02 18:42:44,552 WARNING  * Debugger is active!
+2021-06-02 18:42:44,552 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:42:44,688 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 18:42:45,687 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\tests\\test_invalid_finder.py', reloading
+2021-06-02 18:42:45,760 INFO  * Restarting with stat
+2021-06-02 18:42:46,641 WARNING  * Debugger is active!
+2021-06-02 18:42:46,649 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:42:46,729 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 18:43:50,044 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\tests\\test_invalid_finder.py', reloading
+2021-06-02 18:43:50,106 INFO  * Restarting with stat
+2021-06-02 18:43:51,256 WARNING  * Debugger is active!
+2021-06-02 18:43:51,264 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:43:51,330 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 18:44:13,481 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\tests\\test_invalid_finder.py', reloading
+2021-06-02 18:44:13,538 INFO  * Restarting with stat
+2021-06-02 18:44:14,531 WARNING  * Debugger is active!
+2021-06-02 18:44:14,539 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:44:14,603 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 18:45:07,437 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\tests\\test_invalid_finder.py', reloading
+2021-06-02 18:45:07,518 INFO  * Restarting with stat
+2021-06-02 18:45:08,486 WARNING  * Debugger is active!
+2021-06-02 18:45:08,494 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:45:08,566 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 18:45:40,267 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\tests\\test_invalid_finder.py', reloading
+2021-06-02 18:45:40,323 INFO  * Restarting with stat
+2021-06-02 18:45:41,405 WARNING  * Debugger is active!
+2021-06-02 18:45:41,413 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:45:41,469 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 18:47:21,704 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\utils\\catch_invalid_inputs.py', reloading
+2021-06-02 18:47:21,769 INFO  * Restarting with stat
+2021-06-02 18:47:22,781 WARNING  * Debugger is active!
+2021-06-02 18:47:22,789 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:47:22,861 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 18:47:45,435 INFO 127.0.0.1 - - [02/Jun/2021 18:47:45] "PATCH /clients/1/accounts/1 HTTP/1.1" 200 -
+2021-06-02 18:48:41,906 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\tests\\test_invalid_finder.py', reloading
+2021-06-02 18:48:42,015 INFO  * Restarting with stat
+2021-06-02 18:48:42,940 WARNING  * Debugger is active!
+2021-06-02 18:48:42,940 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:48:43,018 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 18:49:48,350 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\tests\\test_invalid_finder.py', reloading
+2021-06-02 18:49:48,460 INFO  * Restarting with stat
+2021-06-02 18:49:49,505 WARNING  * Debugger is active!
+2021-06-02 18:49:49,513 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:49:49,593 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 18:50:10,665 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\tests\\test_invalid_finder.py', reloading
+2021-06-02 18:50:10,725 INFO  * Restarting with stat
+2021-06-02 18:50:11,691 WARNING  * Debugger is active!
+2021-06-02 18:50:11,699 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:50:11,763 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 18:50:44,595 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\tests\\test_invalid_finder.py', reloading
+2021-06-02 18:50:44,659 INFO  * Restarting with stat
+2021-06-02 18:50:45,709 WARNING  * Debugger is active!
+2021-06-02 18:50:45,709 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:50:45,775 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 18:51:09,005 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\tests\\test_invalid_finder.py', reloading
+2021-06-02 18:51:09,091 INFO  * Restarting with stat
+2021-06-02 18:51:10,159 WARNING  * Debugger is active!
+2021-06-02 18:51:10,167 INFO  * Debugger PIN: 200-860-340
+2021-06-02 18:51:10,223 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:00:17,621 INFO  * Restarting with stat
+2021-06-02 19:00:18,540 WARNING  * Debugger is active!
+2021-06-02 19:00:18,549 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:00:18,599 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:05:21,554 INFO  * Restarting with stat
+2021-06-02 19:05:22,793 WARNING  * Debugger is active!
+2021-06-02 19:05:22,793 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:05:22,856 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:15:36,237 INFO  * Restarting with stat
+2021-06-02 19:15:37,240 WARNING  * Debugger is active!
+2021-06-02 19:15:37,256 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:15:37,319 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:15:57,356 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:15:57,421 INFO  * Restarting with stat
+2021-06-02 19:15:58,483 WARNING  * Debugger is active!
+2021-06-02 19:15:58,498 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:15:58,545 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:16:51,331 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:16:51,426 INFO  * Restarting with stat
+2021-06-02 19:16:52,434 WARNING  * Debugger is active!
+2021-06-02 19:16:52,434 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:16:52,481 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:17:04,061 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:17:04,123 INFO  * Restarting with stat
+2021-06-02 19:17:05,125 WARNING  * Debugger is active!
+2021-06-02 19:17:05,125 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:17:05,188 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:18:04,229 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:18:04,292 INFO  * Restarting with stat
+2021-06-02 19:18:05,636 WARNING  * Debugger is active!
+2021-06-02 19:18:05,652 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:18:05,719 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:18:15,220 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:18:15,299 INFO  * Restarting with stat
+2021-06-02 19:18:16,412 WARNING  * Debugger is active!
+2021-06-02 19:18:16,420 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:18:16,492 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:18:35,161 INFO 127.0.0.1 - - [02/Jun/2021 19:18:35] "[33mPOST /clients/3ff/accounts HTTP/1.1[0m" 404 -
+2021-06-02 19:18:52,872 INFO 127.0.0.1 - - [02/Jun/2021 19:18:52] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 201 -
+2021-06-02 19:19:01,045 INFO 127.0.0.1 - - [02/Jun/2021 19:19:01] "[33mPOST /clients/3/accounts HTTP/1.1[0m" 404 -
+2021-06-02 19:19:13,979 INFO 127.0.0.1 - - [02/Jun/2021 19:19:13] "[33mPOST /clients/3/accounts HTTP/1.1[0m" 404 -
+2021-06-02 19:19:27,865 INFO 127.0.0.1 - - [02/Jun/2021 19:19:27] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 201 -
+2021-06-02 19:21:00,999 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:21:01,117 INFO  * Restarting with stat
+2021-06-02 19:21:02,077 WARNING  * Debugger is active!
+2021-06-02 19:21:02,093 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:21:02,155 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:21:10,529 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:21:10,593 INFO  * Restarting with stat
+2021-06-02 19:21:11,560 WARNING  * Debugger is active!
+2021-06-02 19:21:11,560 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:21:11,607 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:21:24,680 INFO 127.0.0.1 - - [02/Jun/2021 19:21:24] "[33mGET /clients/fr HTTP/1.1[0m" 404 -
+2021-06-02 19:21:28,430 INFO 127.0.0.1 - - [02/Jun/2021 19:21:28] "[35m[1mGET /clients/fr%20 HTTP/1.1[0m" 500 -
+2021-06-02 19:21:38,546 INFO 127.0.0.1 - - [02/Jun/2021 19:21:38] "GET /clients/4 HTTP/1.1" 200 -
+2021-06-02 19:21:58,870 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:21:58,949 INFO  * Restarting with stat
+2021-06-02 19:22:00,020 WARNING  * Debugger is active!
+2021-06-02 19:22:00,020 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:22:00,101 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:22:12,838 INFO 127.0.0.1 - - [02/Jun/2021 19:22:12] "GET /clients/4 HTTP/1.1" 200 -
+2021-06-02 19:22:33,677 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:22:33,739 INFO  * Restarting with stat
+2021-06-02 19:22:34,792 WARNING  * Debugger is active!
+2021-06-02 19:22:34,792 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:22:34,864 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:24:16,326 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:24:16,420 INFO  * Restarting with stat
+2021-06-02 19:24:17,437 WARNING  * Debugger is active!
+2021-06-02 19:24:17,453 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:24:17,499 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:24:27,004 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:24:27,083 INFO  * Restarting with stat
+2021-06-02 19:24:28,066 WARNING  * Debugger is active!
+2021-06-02 19:24:28,083 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:24:28,150 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:26:14,508 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:26:14,726 INFO  * Restarting with stat
+2021-06-02 19:26:15,787 WARNING  * Debugger is active!
+2021-06-02 19:26:15,804 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:26:15,851 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:27:06,384 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:27:06,447 INFO  * Restarting with stat
+2021-06-02 19:27:07,404 WARNING  * Debugger is active!
+2021-06-02 19:27:07,404 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:27:07,467 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:27:42,405 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:27:42,483 INFO  * Restarting with stat
+2021-06-02 19:27:43,515 WARNING  * Debugger is active!
+2021-06-02 19:27:43,515 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:27:43,562 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:29:24,848 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:29:24,910 INFO  * Restarting with stat
+2021-06-02 19:29:26,002 WARNING  * Debugger is active!
+2021-06-02 19:29:26,002 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:29:26,065 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:30:27,266 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:30:27,344 INFO  * Restarting with stat
+2021-06-02 19:30:28,302 WARNING  * Debugger is active!
+2021-06-02 19:30:28,302 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:30:28,380 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:31:21,015 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:31:21,098 INFO  * Restarting with stat
+2021-06-02 19:31:21,990 WARNING  * Debugger is active!
+2021-06-02 19:31:21,990 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:31:22,037 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:32:32,541 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:32:32,616 INFO  * Restarting with stat
+2021-06-02 19:32:33,507 WARNING  * Debugger is active!
+2021-06-02 19:32:33,507 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:32:33,569 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:32:34,602 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:32:34,680 INFO  * Restarting with stat
+2021-06-02 19:32:35,616 WARNING  * Debugger is active!
+2021-06-02 19:32:35,616 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:32:35,694 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:33:01,029 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:33:01,105 INFO  * Restarting with stat
+2021-06-02 19:33:02,102 WARNING  * Debugger is active!
+2021-06-02 19:33:02,102 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:33:02,149 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:34:57,725 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:34:57,817 INFO  * Restarting with stat
+2021-06-02 19:34:58,787 WARNING  * Debugger is active!
+2021-06-02 19:34:58,795 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:34:58,865 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:37:42,474 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:37:42,552 INFO  * Restarting with stat
+2021-06-02 19:37:43,653 WARNING  * Debugger is active!
+2021-06-02 19:37:43,653 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:37:43,700 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:37:53,213 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:37:53,291 INFO  * Restarting with stat
+2021-06-02 19:37:54,291 WARNING  * Debugger is active!
+2021-06-02 19:37:54,306 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:37:54,369 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:38:11,312 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:38:11,401 INFO  * Restarting with stat
+2021-06-02 19:38:12,359 WARNING  * Debugger is active!
+2021-06-02 19:38:12,359 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:38:12,438 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:39:31,710 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:39:31,777 INFO  * Restarting with stat
+2021-06-02 19:39:32,721 WARNING  * Debugger is active!
+2021-06-02 19:39:32,734 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:39:32,797 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:39:58,219 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:39:58,297 INFO  * Restarting with stat
+2021-06-02 19:39:59,249 WARNING  * Debugger is active!
+2021-06-02 19:39:59,249 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:39:59,327 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:42:19,110 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:42:19,189 INFO  * Restarting with stat
+2021-06-02 19:42:20,690 WARNING  * Debugger is active!
+2021-06-02 19:42:20,705 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:42:20,783 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:43:12,460 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:43:12,526 INFO  * Restarting with stat
+2021-06-02 19:43:13,426 WARNING  * Debugger is active!
+2021-06-02 19:43:13,441 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:43:13,504 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:43:27,337 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:43:27,542 INFO  * Restarting with stat
+2021-06-02 19:43:28,758 WARNING  * Debugger is active!
+2021-06-02 19:43:28,773 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:43:28,852 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:43:41,568 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:43:41,646 INFO  * Restarting with stat
+2021-06-02 19:43:42,623 WARNING  * Debugger is active!
+2021-06-02 19:43:42,623 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:43:42,686 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:45:07,822 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:45:08,036 INFO  * Restarting with stat
+2021-06-02 19:45:09,278 WARNING  * Debugger is active!
+2021-06-02 19:45:09,278 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:45:09,356 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:46:06,387 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:46:06,480 INFO  * Restarting with stat
+2021-06-02 19:46:07,616 WARNING  * Debugger is active!
+2021-06-02 19:46:07,616 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:46:07,665 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:46:31,836 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:46:31,914 INFO  * Restarting with stat
+2021-06-02 19:46:32,836 WARNING  * Debugger is active!
+2021-06-02 19:46:32,836 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:46:32,899 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:46:39,643 INFO 127.0.0.1 - - [02/Jun/2021 19:46:39] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-06-02 19:46:45,762 INFO 127.0.0.1 - - [02/Jun/2021 19:46:45] "[33mGET /clients/4e3 HTTP/1.1[0m" 404 -
+2021-06-02 19:46:56,365 INFO 127.0.0.1 - - [02/Jun/2021 19:46:56] "GET /clients/4%20 HTTP/1.1" 200 -
+2021-06-02 19:47:00,147 INFO 127.0.0.1 - - [02/Jun/2021 19:47:00] "[33mGET /clients/4%203 HTTP/1.1[0m" 404 -
+2021-06-02 19:47:09,382 INFO 127.0.0.1 - - [02/Jun/2021 19:47:09] "[33mGET /clients/g_ HTTP/1.1[0m" 404 -
+2021-06-02 19:47:15,266 INFO 127.0.0.1 - - [02/Jun/2021 19:47:15] "GET /clients/4 HTTP/1.1" 200 -
+2021-06-02 19:47:21,396 INFO 127.0.0.1 - - [02/Jun/2021 19:47:21] "[35m[1mPUT /clients/10 HTTP/1.1[0m" 500 -
+2021-06-02 19:47:33,475 INFO 127.0.0.1 - - [02/Jun/2021 19:47:33] "[33mPUT /clients/10 HTTP/1.1[0m" 404 -
+2021-06-02 19:47:45,796 INFO 127.0.0.1 - - [02/Jun/2021 19:47:45] "PUT /clients/5 HTTP/1.1" 200 -
+2021-06-02 19:47:55,627 INFO 127.0.0.1 - - [02/Jun/2021 19:47:55] "PUT /clients/5 HTTP/1.1" 200 -
+2021-06-02 19:48:00,379 INFO 127.0.0.1 - - [02/Jun/2021 19:48:00] "[33mPUT /clients/5 HTTP/1.1[0m" 404 -
+2021-06-02 19:48:08,586 INFO 127.0.0.1 - - [02/Jun/2021 19:48:08] "PUT /clients/5 HTTP/1.1" 200 -
+2021-06-02 19:48:17,895 INFO 127.0.0.1 - - [02/Jun/2021 19:48:17] "GET /clients/3/accounts HTTP/1.1" 200 -
+2021-06-02 19:48:26,202 INFO 127.0.0.1 - - [02/Jun/2021 19:48:26] "[35m[1mGET /clients/f/accounts?amountLessThan=10000&amountGreaterThan=1 HTTP/1.1[0m" 500 -
+2021-06-02 19:48:36,129 INFO 127.0.0.1 - - [02/Jun/2021 19:48:36] "[35m[1mGET /clients/5/accounts?amountLessThan=f&amountGreaterThan=dd HTTP/1.1[0m" 500 -
+2021-06-02 19:48:53,243 INFO 127.0.0.1 - - [02/Jun/2021 19:48:53] "GET /clients/5/accounts?amountLessThan=10000&amountGreaterThan=5 HTTP/1.1" 200 -
+2021-06-02 19:49:03,171 INFO 127.0.0.1 - - [02/Jun/2021 19:49:03] "GET /clients/4/accounts?amountLessThan=10000&amountGreaterThan=5 HTTP/1.1" 200 -
+2021-06-02 19:49:09,105 INFO 127.0.0.1 - - [02/Jun/2021 19:49:09] "[35m[1mGET /clients/4/accounts?amountLessThan=f&amountGreaterThan=5 HTTP/1.1[0m" 500 -
+2021-06-02 19:49:15,020 INFO 127.0.0.1 - - [02/Jun/2021 19:49:15] "GET /clients/4/accounts?amountLessThan=10000&amountGreaterThan=5 HTTP/1.1" 200 -
+2021-06-02 19:50:10,623 INFO 127.0.0.1 - - [02/Jun/2021 19:50:10] "[35m[1mGET /clients/4/accounts?amountLessThan=10000&amountGreaterThan=ff HTTP/1.1[0m" 500 -
+2021-06-02 19:51:20,663 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 19:51:20,773 INFO  * Restarting with stat
+2021-06-02 19:51:21,758 WARNING  * Debugger is active!
+2021-06-02 19:51:21,762 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:51:21,822 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 19:51:23,114 INFO 127.0.0.1 - - [02/Jun/2021 19:51:23] "[33mGET /clients/4/accounts?amountLessThan=10000&amountGreaterThan=ff HTTP/1.1[0m" 404 -
+2021-06-02 19:51:33,128 INFO 127.0.0.1 - - [02/Jun/2021 19:51:33] "GET /clients/4/accounts?amountLessThan=10000&amountGreaterThan=5 HTTP/1.1" 200 -
+2021-06-02 19:51:38,172 INFO 127.0.0.1 - - [02/Jun/2021 19:51:38] "PATCH /clients/1/accounts/1 HTTP/1.1" 200 -
+2021-06-02 19:51:48,124 INFO 127.0.0.1 - - [02/Jun/2021 19:51:48] "[33mPATCH /clients/g/accounts/ff HTTP/1.1[0m" 404 -
+2021-06-02 19:51:57,495 INFO 127.0.0.1 - - [02/Jun/2021 19:51:57] "[31m[1mPATCH /clients/-2/accounts/4 HTTP/1.1[0m" 400 -
+2021-06-02 19:52:07,320 INFO 127.0.0.1 - - [02/Jun/2021 19:52:07] "[33mPATCH /clients/5/accounts/2 HTTP/1.1[0m" 404 -
+2021-06-02 19:52:17,475 INFO 127.0.0.1 - - [02/Jun/2021 19:52:17] "[31m[1mPATCH /clients/5/accounts/2 HTTP/1.1[0m" 400 -
+2021-06-02 19:52:34,464 INFO 127.0.0.1 - - [02/Jun/2021 19:52:34] "[31m[1mPATCH /clients/5/accounts/2 HTTP/1.1[0m" 400 -
+2021-06-02 19:52:43,425 INFO 127.0.0.1 - - [02/Jun/2021 19:52:43] "[31m[1mPATCH /clients/5/accounts/2 HTTP/1.1[0m" 400 -
+2021-06-02 19:52:54,060 INFO 127.0.0.1 - - [02/Jun/2021 19:52:54] "[33mPATCH /clients/5/accounts/2 HTTP/1.1[0m" 404 -
+2021-06-02 19:59:40,207 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\utils\\handle_exceptions.py', reloading
+2021-06-02 19:59:40,278 INFO  * Restarting with stat
+2021-06-02 19:59:41,284 WARNING  * Debugger is active!
+2021-06-02 19:59:41,284 INFO  * Debugger PIN: 200-860-340
+2021-06-02 19:59:41,348 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 20:00:34,171 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\utils\\handle_exceptions.py', reloading
+2021-06-02 20:00:34,259 INFO  * Restarting with stat
+2021-06-02 20:00:35,244 WARNING  * Debugger is active!
+2021-06-02 20:00:35,252 INFO  * Debugger PIN: 200-860-340
+2021-06-02 20:00:35,324 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 20:01:12,261 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\utils\\handle_exceptions.py', reloading
+2021-06-02 20:01:12,357 INFO  * Restarting with stat
+2021-06-02 20:01:13,714 WARNING  * Debugger is active!
+2021-06-02 20:01:13,722 INFO  * Debugger PIN: 200-860-340
+2021-06-02 20:01:13,834 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 20:01:40,679 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 20:01:40,759 INFO  * Restarting with stat
+2021-06-02 20:01:41,969 WARNING  * Debugger is active!
+2021-06-02 20:01:41,977 INFO  * Debugger PIN: 200-860-340
+2021-06-02 20:01:42,049 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 20:01:50,546 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\utils\\handle_exceptions.py', reloading
+2021-06-02 20:01:50,650 INFO  * Restarting with stat
+2021-06-02 20:01:51,704 WARNING  * Debugger is active!
+2021-06-02 20:01:51,704 INFO  * Debugger PIN: 200-860-340
+2021-06-02 20:01:51,776 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 20:02:03,391 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\utils\\handle_exceptions.py', reloading
+2021-06-02 20:02:03,472 INFO  * Restarting with stat
+2021-06-02 20:02:04,440 WARNING  * Debugger is active!
+2021-06-02 20:02:04,448 INFO  * Debugger PIN: 200-860-340
+2021-06-02 20:02:04,504 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 20:02:27,853 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 20:02:27,949 INFO  * Restarting with stat
+2021-06-02 20:02:29,011 WARNING  * Debugger is active!
+2021-06-02 20:02:29,011 INFO  * Debugger PIN: 200-860-340
+2021-06-02 20:02:29,086 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 20:04:14,581 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\utils\\handle_exceptions.py', reloading
+2021-06-02 20:04:14,669 INFO  * Restarting with stat
+2021-06-02 20:04:15,636 WARNING  * Debugger is active!
+2021-06-02 20:04:15,644 INFO  * Debugger PIN: 200-860-340
+2021-06-02 20:04:15,685 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 20:04:52,844 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\utils\\handle_exceptions.py', reloading
+2021-06-02 20:04:52,948 INFO  * Restarting with stat
+2021-06-02 20:04:53,985 WARNING  * Debugger is active!
+2021-06-02 20:04:53,993 INFO  * Debugger PIN: 200-860-340
+2021-06-02 20:04:54,073 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 20:06:30,929 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\utils\\handle_exceptions.py', reloading
+2021-06-02 20:06:30,991 INFO  * Restarting with stat
+2021-06-02 20:06:31,904 WARNING  * Debugger is active!
+2021-06-02 20:06:31,904 INFO  * Debugger PIN: 200-860-340
+2021-06-02 20:06:31,967 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 20:11:18,838 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 20:11:18,916 INFO  * Restarting with stat
+2021-06-02 20:11:19,887 WARNING  * Debugger is active!
+2021-06-02 20:11:19,887 INFO  * Debugger PIN: 200-860-340
+2021-06-02 20:11:19,966 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 20:12:27,182 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 20:12:27,245 INFO  * Restarting with stat
+2021-06-02 20:12:28,559 WARNING  * Debugger is active!
+2021-06-02 20:12:28,567 INFO  * Debugger PIN: 200-860-340
+2021-06-02 20:12:28,642 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 20:12:31,749 INFO 127.0.0.1 - - [02/Jun/2021 20:12:31] "[35m[1mPOST /clients HTTP/1.1[0m" 500 -
+2021-06-02 20:13:20,591 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 20:13:20,702 INFO  * Restarting with stat
+2021-06-02 20:13:21,690 WARNING  * Debugger is active!
+2021-06-02 20:13:21,690 INFO  * Debugger PIN: 200-860-340
+2021-06-02 20:13:21,768 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 20:13:30,637 INFO 127.0.0.1 - - [02/Jun/2021 20:13:30] "[35m[1mPOST /clients HTTP/1.1[0m" 500 -
+2021-06-02 20:14:50,926 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 20:14:51,032 INFO  * Restarting with stat
+2021-06-02 20:14:52,188 WARNING  * Debugger is active!
+2021-06-02 20:14:52,188 INFO  * Debugger PIN: 200-860-340
+2021-06-02 20:14:52,282 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 20:16:05,211 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 20:16:05,289 INFO  * Restarting with stat
+2021-06-02 20:16:06,205 WARNING  * Debugger is active!
+2021-06-02 20:16:06,220 INFO  * Debugger PIN: 200-860-340
+2021-06-02 20:16:06,299 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 20:16:10,529 INFO 127.0.0.1 - - [02/Jun/2021 20:16:10] "[31m[1mPOST /clients HTTP/1.1[0m" 400 -
+2021-06-02 20:16:59,839 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\utils\\handle_exceptions.py', reloading
+2021-06-02 20:16:59,901 INFO  * Restarting with stat
+2021-06-02 20:17:00,851 WARNING  * Debugger is active!
+2021-06-02 20:17:00,867 INFO  * Debugger PIN: 200-860-340
+2021-06-02 20:17:00,913 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 20:17:04,003 INFO 127.0.0.1 - - [02/Jun/2021 20:17:04] "[35m[1mPOST /clients HTTP/1.1[0m" 500 -
+2021-06-02 20:17:08,845 INFO 127.0.0.1 - - [02/Jun/2021 20:17:08] "[35m[1mPOST /clients HTTP/1.1[0m" 500 -
+2021-06-02 20:17:33,463 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\utils\\handle_exceptions.py', reloading
+2021-06-02 20:17:33,541 INFO  * Restarting with stat
+2021-06-02 20:17:34,602 WARNING  * Debugger is active!
+2021-06-02 20:17:34,617 INFO  * Debugger PIN: 200-860-340
+2021-06-02 20:17:34,680 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 20:17:36,508 INFO 127.0.0.1 - - [02/Jun/2021 20:17:36] "[31m[1mPOST /clients HTTP/1.1[0m" 400 -
+2021-06-02 20:19:40,733 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\utils\\handle_exceptions.py', reloading
+2021-06-02 20:19:40,827 INFO  * Restarting with stat
+2021-06-02 20:19:41,768 WARNING  * Debugger is active!
+2021-06-02 20:19:41,783 INFO  * Debugger PIN: 200-860-340
+2021-06-02 20:19:41,830 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 20:19:43,990 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\utils\\handle_exceptions.py', reloading
+2021-06-02 20:19:44,100 INFO  * Restarting with stat
+2021-06-02 20:19:45,415 WARNING  * Debugger is active!
+2021-06-02 20:19:45,415 INFO  * Debugger PIN: 200-860-340
+2021-06-02 20:19:45,477 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 20:19:53,132 INFO 127.0.0.1 - - [02/Jun/2021 20:19:53] "[35m[1mPOST /clients HTTP/1.1[0m" 500 -
+2021-06-02 20:21:01,025 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\utils\\handle_exceptions.py', reloading
+2021-06-02 20:21:01,088 INFO  * Restarting with stat
+2021-06-02 20:21:01,997 WARNING  * Debugger is active!
+2021-06-02 20:21:01,997 INFO  * Debugger PIN: 200-860-340
+2021-06-02 20:21:02,075 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 20:21:04,791 INFO 127.0.0.1 - - [02/Jun/2021 20:21:04] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-06-02 20:21:50,335 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\utils\\handle_exceptions.py', reloading
+2021-06-02 20:21:50,400 INFO  * Restarting with stat
+2021-06-02 21:08:59,158 INFO  * Restarting with stat
+2021-06-02 21:09:00,068 WARNING  * Debugger is active!
+2021-06-02 21:09:00,083 INFO  * Debugger PIN: 200-860-340
+2021-06-02 21:09:00,161 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 21:09:07,458 INFO 127.0.0.1 - - [02/Jun/2021 21:09:07] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-06-02 21:09:09,251 INFO 127.0.0.1 - - [02/Jun/2021 21:09:09] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-06-02 21:09:12,050 INFO 127.0.0.1 - - [02/Jun/2021 21:09:12] "[31m[1mGET /clients HTTP/1.1[0m" 405 -
+2021-06-02 21:09:29,683 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 21:09:29,761 INFO  * Restarting with stat
+2021-06-02 21:09:30,724 WARNING  * Debugger is active!
+2021-06-02 21:09:30,724 INFO  * Debugger PIN: 200-860-340
+2021-06-02 21:09:30,787 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 21:09:42,151 INFO 127.0.0.1 - - [02/Jun/2021 21:09:42] "[33mGET /clients HTTP/1.1[0m" 404 -
+2021-06-02 21:09:57,123 INFO 127.0.0.1 - - [02/Jun/2021 21:09:57] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 201 -
+2021-06-02 21:10:00,665 INFO 127.0.0.1 - - [02/Jun/2021 21:10:00] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 201 -
+2021-06-02 21:10:10,867 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 21:10:10,929 INFO  * Restarting with stat
+2021-06-02 21:10:14,001 INFO  * Restarting with stat
+2021-06-02 21:10:14,848 WARNING  * Debugger is active!
+2021-06-02 21:10:14,863 INFO  * Debugger PIN: 200-860-340
+2021-06-02 21:10:14,926 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 21:10:28,584 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 21:10:28,693 INFO  * Restarting with stat
+2021-06-02 21:10:37,529 INFO  * Restarting with stat
+2021-06-02 21:10:38,596 WARNING  * Debugger is active!
+2021-06-02 21:10:38,612 INFO  * Debugger PIN: 200-860-340
+2021-06-02 21:10:38,691 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 21:10:42,883 INFO 127.0.0.1 - - [02/Jun/2021 21:10:42] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-06-02 21:11:00,813 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 21:11:00,876 INFO  * Restarting with stat
+2021-06-02 21:11:10,673 INFO  * Restarting with stat
+2021-06-02 21:11:11,582 WARNING  * Debugger is active!
+2021-06-02 21:11:11,582 INFO  * Debugger PIN: 200-860-340
+2021-06-02 21:11:11,647 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 21:11:26,807 INFO 127.0.0.1 - - [02/Jun/2021 21:11:26] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-06-02 21:11:29,917 INFO 127.0.0.1 - - [02/Jun/2021 21:11:29] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 201 -
+2021-06-02 21:11:43,192 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 21:11:43,270 INFO  * Restarting with stat
+2021-06-02 21:11:55,168 INFO  * Restarting with stat
+2021-06-02 21:11:56,195 WARNING  * Debugger is active!
+2021-06-02 21:11:56,195 INFO  * Debugger PIN: 200-860-340
+2021-06-02 21:11:56,242 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 21:12:06,747 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 21:12:06,810 INFO  * Restarting with stat
+2021-06-02 21:12:07,956 WARNING  * Debugger is active!
+2021-06-02 21:12:07,956 INFO  * Debugger PIN: 200-860-340
+2021-06-02 21:12:08,019 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 21:12:14,321 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 21:12:14,385 INFO  * Restarting with stat
+2021-06-02 21:12:15,311 WARNING  * Debugger is active!
+2021-06-02 21:12:15,311 INFO  * Debugger PIN: 200-860-340
+2021-06-02 21:12:15,376 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 21:13:29,020 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 21:13:29,083 INFO  * Restarting with stat
+2021-06-02 21:13:30,051 WARNING  * Debugger is active!
+2021-06-02 21:13:30,051 INFO  * Debugger PIN: 200-860-340
+2021-06-02 21:13:30,098 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 21:13:35,861 INFO 127.0.0.1 - - [02/Jun/2021 21:13:35] "GET /clients HTTP/1.1" 200 -
+2021-06-02 21:13:39,464 INFO 127.0.0.1 - - [02/Jun/2021 21:13:39] "GET /accounts HTTP/1.1" 200 -
+2021-06-02 21:13:42,868 INFO 127.0.0.1 - - [02/Jun/2021 21:13:42] "[35m[1mPATCH /clients/1/accounts/1/transfer/3 HTTP/1.1[0m" 500 -
+2021-06-02 21:14:16,893 INFO 127.0.0.1 - - [02/Jun/2021 21:14:16] "[35m[1mPATCH /clients/5/accounts/2 HTTP/1.1[0m" 500 -
+2021-06-02 21:14:24,646 INFO 127.0.0.1 - - [02/Jun/2021 21:14:24] "[35m[1mPATCH /clients/2/accounts/2/transfer/1 HTTP/1.1[0m" 500 -
+2021-06-02 21:14:29,173 INFO 127.0.0.1 - - [02/Jun/2021 21:14:29] "PATCH /clients/1/accounts/1 HTTP/1.1" 200 -
+2021-06-02 21:14:47,949 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\utils\\handle_exceptions.py', reloading
+2021-06-02 21:14:48,027 INFO  * Restarting with stat
+2021-06-02 21:14:49,022 WARNING  * Debugger is active!
+2021-06-02 21:14:49,022 INFO  * Debugger PIN: 200-860-340
+2021-06-02 21:14:49,084 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 21:14:55,828 INFO 127.0.0.1 - - [02/Jun/2021 21:14:55] "[35m[1mPATCH /clients/5/accounts/2 HTTP/1.1[0m" 500 -
+2021-06-02 21:17:50,739 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 21:17:50,817 INFO  * Restarting with stat
+2021-06-02 21:21:48,395 INFO  * Restarting with stat
+2021-06-02 21:21:49,354 WARNING  * Debugger is active!
+2021-06-02 21:21:49,354 INFO  * Debugger PIN: 200-860-340
+2021-06-02 21:21:49,432 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)
+2021-06-02 21:21:57,933 INFO 127.0.0.1 - - [02/Jun/2021 21:21:57] "[33mPATCH /clients/5/accounts/2 HTTP/1.1[0m" 404 -
+2021-06-02 21:22:09,591 INFO 127.0.0.1 - - [02/Jun/2021 21:22:09] "[31m[1mPATCH /clients/1/accounts/2 HTTP/1.1[0m" 422 -
+2021-06-02 21:25:01,927 INFO  * Detected change in 'C:\\Users\\cahe1\\PycharmProjects\\project0\\main.py', reloading
+2021-06-02 21:25:02,021 INFO  * Restarting with stat
+2021-06-02 21:25:03,265 WARNING  * Debugger is active!
+2021-06-02 21:25:03,265 INFO  * Debugger PIN: 200-860-340
+2021-06-02 21:25:03,312 INFO  * Running on http://127.0.0.1:3030/ (Press CTRL+C to quit)

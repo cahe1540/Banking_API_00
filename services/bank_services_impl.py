@@ -6,7 +6,6 @@ from daos.client_dao import ClientDAO
 from entities.account import Account
 
 
-
 class BankServicesImpl(BankServices, AccountServicesImpl, ClientServicesImpl):
 
     def __init__(self, accountDao: AccountDAO, clientDao: ClientDAO):
@@ -50,7 +49,7 @@ class BankServicesImpl(BankServices, AccountServicesImpl, ClientServicesImpl):
         # 2) make transaction
         return self.accountDao.update_account_balance(account_id, client_id, transaction_type, amount)
 
-    def delete_client_by_id(self, client_id: int) -> bool:
+    def delete_client_and_accounts(self, client_id: int) -> bool:
         # 1) delete all accounts by client ID
         result = self.accountDao.delete_all_accounts_by_client_id(client_id)
 
@@ -63,3 +62,11 @@ class BankServicesImpl(BankServices, AccountServicesImpl, ClientServicesImpl):
 
         # 2) delete the account by client and account id
         return self.accountDao.delete_account_by_id_and_client_id(account_id, client_id)
+
+    # OVERRIDE the method inherited from account_services_impl
+    def retrieve_client_accounts_within_range(self, client_id: int, lower: float or int, upper: float or int):
+        # 1. #check if the client with id client_id exists
+        client = self.clientDao.get_client_by_Id(client_id)
+
+        # 2) return accounts
+        return self.accountDao.get_client_accounts_within_range(client_id, lower, upper)

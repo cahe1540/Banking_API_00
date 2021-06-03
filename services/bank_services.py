@@ -28,7 +28,7 @@ class BankServices(ABC):
         pass
 
     @abstractmethod
-    def delete_client_by_id(self, client_id: int):
+    def delete_client_and_accounts(self, client_id: int):
         pass
 
     @abstractmethod
